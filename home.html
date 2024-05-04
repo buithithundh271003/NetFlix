@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="navbar_brand">
+            <img
+              src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
+              alt="logo"
+              class="brand_logo"
+            />
+          </div>
+  
+          <div class="navbar_nav_items " style="margin-left: 50px;">
+            <ul style="list-style-type: none; display: flex; font-weight: bold;">
+                <li>Trang chủ</li>
+                <li>Phim thịnh hành</li>
+                <li>Mới </li>
+                <li>Danh sách của tôi</li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero_bg_image_container">
+              <img
+                src="https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_assets/kvp_thumb_1280x720_40ed3fc8a3f5_1597996848159_m6u3m3hw-67dc32747314-1666345564351-j16knCEs.jpg?v=0&maxW=1400&format=webp"
+                alt="BG hero image"
+                class="hero_bg_image"
+                style="height: 100vh;"
+              />
+            </div>
+            <div class="hero_bg_overlay"></div>
+    
+            <div class="hero_card">
+              <h1 class="hero_title" style="color: aqua;">
+             Kiếp văn phòng<br />
+                <p style="color: black; font-size: 1.4rem; margin-top: 10px;">Xem ngay mùa 3</p>
+              </h1>
+              <p class="hero_description" style="color: white; font-size: 1rem; line-height: 1.3;">
+                Quyết tâm phá bỏ lời nguyền là đứa con hoang của quỷ Sata Rin tham gia học viện Chân Thập Tự để trở thành pháp sư trừ tà giống thầy mình
+              </p>
+    
+              <div class="email_form_container">
+               
+                <button class="primary_button" onclick="display('ch1') ">
+                  Phát
+                </button>
+                <button class="primary_button" >
+                    Thông tin khác
+                  </button>
+              </div>
+            </div>
+          </section>
+          <section style="margin: 40px;align-items: center; " id="ch1">
+            <div className="section-share section-about" >
+                        
+                <div className="section-about-content" >
+                    <div className="content-left" style="width: 90%;">
+                        <iframe width="100%" height="455" src="https://www.youtube.com/embed/Y0apZ_ROoqQ?si=vYaf8v0pF-EWW4rs&amp;start=15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  
+                </div>
+            </div>
+          </section>
+
+    </main>
+    <script>
+function display(id) {
+    console.log("a");
+    var vid = document.getElementById(id);
+    if (vid.style.display == 'block') {
+      vid.style.display = 'none';
+     
+    } else {
+      vid.style.display = 'block';
+    }
+  }
+    </script>
+</body>
+</html>
