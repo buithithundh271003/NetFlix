@@ -17,6 +17,7 @@
     display: flex;
     padding: 3% 5%;
     z-index: 10;
+    
   }
   
   .navbar_brand {
@@ -31,6 +32,7 @@
   .navbar_nav_items {
     display: flex;
     gap: 10px;
+    
   }
   
   .hero_bg_image_container {
